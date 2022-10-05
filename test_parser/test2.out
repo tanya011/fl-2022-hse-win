@@ -1,0 +1,9 @@
+start:E
+terminals: ) * + ( x 
+non-terminals: E 
+rules:
+E=E+E
+E=E*E
+E=x
+E=(E)
+Not normal formal

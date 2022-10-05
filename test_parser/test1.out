@@ -1,0 +1,9 @@
+start:E
+terminals: [ ) ] ( 
+non-terminals: E 
+rules:
+E=e
+E=(E)
+E=[E]
+E=EE
+Not normal formal

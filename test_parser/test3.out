@@ -1,0 +1,10 @@
+start:S
+terminals: b a 
+non-terminals: S A T 
+rules:
+S=aSA
+S=aT
+TA=bTa
+aA=Aa
+T=ba
+Not normal formal
