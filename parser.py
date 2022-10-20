@@ -71,7 +71,7 @@ def p_error(p):
     exit(123)
 
 
-def p_var_declaration_without_end(p):
+def p_error_without_end(p):
     """rule : NON_TERMINAL ARROW tokens
     | START ARROW tokens"""
     f = open(file_out, "a")
@@ -86,7 +86,7 @@ def p_var_declaration_without_end(p):
     change_line_in_help_file(current_line - 1, correct_line)
 
 
-def p_var_declaration_not_non_terminal(p):
+def p_error_not_non_terminal(p):
     """rule : tokens ARROW tokens END"""
     f = open(file_out, "a")
     f.write(f"You should use one non_terminal before arrow :" + str(current_line) + '\n')
@@ -100,7 +100,7 @@ def p_var_declaration_not_non_terminal(p):
     change_line_in_help_file(current_line - 1, correct_line)
 
 
-def p_var_declaration_not_non_terminal_end(p):
+def p_error_not_non_terminal_end(p):
     """rule : tokens ARROW tokens"""
     f = open(file_out, "a")
     f.write(f"You should use one non_terminal before arrow :" + str(current_line) + '\n')
@@ -114,7 +114,7 @@ def p_var_declaration_not_non_terminal_end(p):
 
 
 
-def p_var_declaration_without_rule(p):
+def p_error_without_rule(p):
     """ rule :
     | tokens
     | tokens END
