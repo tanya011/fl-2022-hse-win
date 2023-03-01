@@ -57,11 +57,11 @@ Example of a correct grammar:
 `E` = `E``E`,
 ```
 
-## 3. Description of the selected strategies
+## 4. Description of the selected strategies
 
 #### Phase Level Recovery
 
-In this strategy, errors are corrected as they are found: one line is processed, and if an error is found in it, the error is corrected. The analysis does not move to a new line until the current line is fully correct (for example, in the example below, the first line is corrected by replacing two tokens with one non-terminal, followed by inserting a comma).
+Phase Level Recovery straragy was used ([link](https://www.geeksforgeeks.org/error-recovery-strategies-in-compiler-design/)). In this strategy, errors are corrected as they are found: one line is processed, and if an error is found in it, the error is corrected. The analysis does not move to a new line until the current line is fully correct (for example, in the example below, the first line is corrected by replacing two tokens with one non-terminal, followed by inserting a comma).
 
 ###### Example of the process:
 
@@ -98,7 +98,7 @@ Expected rule :5
 
 ##### More information about other strategies is available in the file (in Russian): [Исследование_различных_стратегий.pdf](https://github.com/tanya011/fl-2022-hse-win/blob/proj/%D0%98%D1%81%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D1%80%D0%B0%D0%B7%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D1%85_%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D0%B8%D0%B9.pdf)
 
-## 4. Comparison of two strategies
+## 5. Comparison of two strategies
 
 Let's see how the strategies work on different examples:
 
