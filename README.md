@@ -6,7 +6,7 @@
 - implemented different error recovery strategies,
 - many examples are given that demonstrate the differences in error recovery strategies, emphasizing their advantages and disadvantages.
 
-## 1.Launch
+## 1. Launch
 
 ##### Launching the Phase Level Recovery strategy
 
