@@ -61,7 +61,7 @@ Example of a correct grammar:
 
 #### Phase Level Recovery
 
-Phase Level Recovery straragy was used ([link](https://www.geeksforgeeks.org/error-recovery-strategies-in-compiler-design/)). In this strategy, errors are corrected as they are found: one line is processed, and if an error is found in it, the error is corrected. The analysis does not move to a new line until the current line is fully correct (for example, in the example below, the first line is corrected by replacing two tokens with one non-terminal, followed by inserting a comma).
+[Phase Level Recovery](https://www.geeksforgeeks.org/error-recovery-strategies-in-compiler-design/) straragy was used. In this strategy, errors are corrected as they are found: one line is processed, and if an error is found in it, the error is corrected. The analysis does not move to a new line until the current line is fully correct (for example, in the example below, the first line is corrected by replacing two tokens with one non-terminal, followed by inserting a comma).
 
 ###### Example of the process:
 
