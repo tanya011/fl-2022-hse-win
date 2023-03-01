@@ -22,7 +22,7 @@ Parser: `python ./parser_panic_mode.py <path to the file to be analyzed> <path t
 
 ##### Tatiana Elfimova
 
-- Lexer and parser for a specific language written using ply.lex and ply.yacc
+- Lexer and parser for a specific language written using `ply.lex` and `ply.yacc`
 - Implementation of one strategy
 - Tests
 - Comparison of two implementations
@@ -39,12 +39,12 @@ Parser: `python ./parser_panic_mode.py <path to the file to be analyzed> <path t
 
 The grammars follow these rules:
 
-- The start symbol is enclosed in < >
-- Non-terminals are enclosed in ' '
-- Terminals are enclosed in " "
-- Empty string is represented by e
+- The start symbol is enclosed in `< >`
+- Non-terminals are enclosed in `' '`
+- Terminals are enclosed in `" "`
+- Empty string is represented by `e`
 - Rule:
-  - non-terminal = (terminals and non-terminals) ,
+  - `non-terminal = (terminals and non-terminals) ,`
   - Each rule should be written on a single line
   - There should be no empty rules
   
